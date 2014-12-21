@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Matthew Reily's Blog
+title: The Dyslexic Developer
 subtitle:
 description:
 author: Matthew Reily
@@ -87,5 +87,4 @@ exclude_generator:
 deploy:
   type: github
   branch: gh-pages
-  repository: https://github.com/matthewreily/blog.git
-  
+  repository: https://github.com/matthewreily/dyslexicdeveloper.git
