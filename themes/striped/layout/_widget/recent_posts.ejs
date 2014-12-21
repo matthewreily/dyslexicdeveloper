@@ -1,0 +1,16 @@
+<% if (site.posts.length){ %>
+  <section class="box recent-posts">
+    <header>
+      <h2>Recent Posts</h2>
+    </header>
+    <ul>
+      <% site.posts.sort( 'date', -1).limit(5).each(function(post){ %>
+        <li>
+          <a href="<%- url_for(post.path) %>">
+            <%= post.title || '(no title)' %>
+          </a>
+        </li>
+        <% }); %>
+    </ul>
+  </section>
+  <% } %>

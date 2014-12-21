@@ -1,0 +1,10 @@
+<% if (site.categories.length){ %>
+  <section>
+    <header>
+      <h2><%= __('categories') %></h2>
+    </header>
+    <ul>
+      <%- list_categories() %>
+    </ul>
+  </section>
+  <% } %>
