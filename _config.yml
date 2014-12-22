@@ -75,11 +75,10 @@ pagination_dir: page
 
 # Disqus
 disqus_shortname:
-
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
-## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: striped
+## Themes: https://gith/hexojs/hexo/wiki/Themes
+theme: jacman
 exclude_generator:
 
 # Deployment
