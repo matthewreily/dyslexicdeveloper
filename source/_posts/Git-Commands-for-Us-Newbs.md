@@ -11,7 +11,7 @@ I now find myself using Git more and more frequently. So this post and hopefully
 more to follow, will be a place for me to document common tasks and workflows
 as performed in Git.
 
-###List of Git Commands - Init and Clone
+###List of Git Commands
 ![](../img/12262014/GitCommands.png)
 
 ###Creating and Retrieving Git Repositories
