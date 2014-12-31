@@ -9,6 +9,7 @@ tags: Git
 "Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots."
 http://git-scm.com/book/en/v2/Getting-Started-Git-Basics
 
+---
 __status__ - view the status of your files in both the working directory and the staging area
 
 ![](../img/12292014/git_status_s.PNG)
@@ -16,6 +17,7 @@ __status__ - view the status of your files in both the working directory and the
 And the shorter version using -s
 ![](../img/12292014/git_status.PNG)
 
+---
 __add__ - adds file contents to the staging area
 
 In the status example above you will notice a '??' notation next to the file HelloWorld.cs. This tells us that the file is not being tracked by Git.
@@ -31,3 +33,10 @@ __Important Note__ - Add is not only used for adding new files, but also for add
 
 Example. You have an existing class file named foo.cs that you have updated with some new improved logic. If you do not perform an add on the file, it will not get committed to your repository.
 ![](../img/12292014/gitcommitwithoutadd.PNG)
+
+---
+__diff__ Shows changes between commits, commits and working tree, etc
+full documentation can be found http://git-scm.com/docs/git-diff
+
+Diff when local foo.cs has uncommitted change where we added a line _NewMethod(string name);_
+![](../img/12292014/gitDiff.PNG)
