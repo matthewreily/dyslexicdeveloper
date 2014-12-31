@@ -29,6 +29,7 @@ Basic Snapshotting
 <meta property="og:image" content="../img/12292014/gitadd.PNG">
 <meta property="og:image" content="../img/12292014/git_status_afteradd.PNG">
 <meta property="og:image" content="../img/12292014/gitcommitwithoutadd.PNG">
+<meta property="og:image" content="../img/12292014/gitDiff.PNG">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git Commands for Us Newbs - Part 2">
 <meta name="twitter:description" content="List of Git Commands - Continued
@@ -119,15 +120,20 @@ Basic Snapshotting
 		<h3 id="List_of_Git_Commands_-_Continued">List of Git Commands - Continued</h3>
 <h3 id="Basic_Snapshotting">Basic Snapshotting</h3>
 <p>“Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots.”<br><a href="http://git-scm.com/book/en/v2/Getting-Started-Git-Basics" target="_blank" rel="external">http://git-scm.com/book/en/v2/Getting-Started-Git-Basics</a></p>
+<hr>
 <p><strong>status</strong> - view the status of your files in both the working directory and the staging area</p>
 <p><img src="../img/12292014/git_status_s.PNG" alt=""></p>
 <p>And the shorter version using -s<br><img src="../img/12292014/git_status.PNG" alt=""></p>
+<hr>
 <p><strong>add</strong> - adds file contents to the staging area</p>
 <p>In the status example above you will notice a ‘??’ notation next to the file HelloWorld.cs. This tells us that the file is not being tracked by Git.</p>
 <p>So if we add the the<br><img src="../img/12292014/gitadd.PNG" alt=""></p>
 <p>Then run status<br><img src="../img/12292014/git_status_afteradd.PNG" alt=""><br>We now have an ‘A’ next to our file name denoting that it has been added</p>
 <p><strong>Important Note</strong> - Add is not only used for adding new files, but also for adding any changes you made to existing files.  </p>
 <p>Example. You have an existing class file named foo.cs that you have updated with some new improved logic. If you do not perform an add on the file, it will not get committed to your repository.<br><img src="../img/12292014/gitcommitwithoutadd.PNG" alt=""></p>
+<hr>
+<p><strong>diff</strong> Shows changes between commits, commits and working tree, etc<br>full documentation can be found <a href="http://git-scm.com/docs/git-diff" target="_blank" rel="external">http://git-scm.com/docs/git-diff</a></p>
+<p>Diff when local foo.cs has uncommitted change where we added a line <em>NewMethod(string name);</em><br><img src="../img/12292014/gitDiff.PNG" alt=""></p>
 
 	</div>
 		<footer class="article-footer clearfix">
